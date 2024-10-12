@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  'bootstrap/dist/css/bootstrap.min.css';
 import Users from './assets/Users';
 import CreateUser from './assets/CreateUser';
@@ -13,7 +13,7 @@ function App() {
     <div> 
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<users/>}></Route>
+        <Route path='/' element={<Users/>}></Route>
         <Route path='/create' element={<CreateUser/>}></Route>
         <Route path='/update' element={<UpdateUser/>}></Route>
 
